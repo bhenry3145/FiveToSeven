@@ -16,4 +16,5 @@ Endpoints:
 4. ReverseIt (Numbers Only): endpoint that accepts a sequence of only numbers and reverses them.  Be sure to display the original characters before the reversed.  For example:
      - "You entered 12345, reversed is 54321"
 
-Peer Review: 
+Peer Review: David Monterrosa
+> Most of the endpoints work and meet the design specifications. However in the ReverseItNumbers endpoint, the code does not properly reverse negative numbers, or numbers ending in 0.
