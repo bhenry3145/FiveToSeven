@@ -13,6 +13,7 @@ namespace FiveToSeven.Services
         public string convertedNumString = "";
         public bool runs;
         public int remainder;
+        public string convertedAgain = "0";
 
         public string ReverseItNum(string num)
         {
@@ -29,6 +30,11 @@ namespace FiveToSeven.Services
                     int number = convertedNum % 10;
                     remainder = ((remainder*10) + number);
                     convertedNum = convertedNum / 10;
+                    if (num.Length - 1 == 0){
+                        convertedAgain += remainder;
+                        sequence = "You entered " + convertedNumString + ", reversed is " + convertedAgain;
+                        return sequence;
+                    }
                     sequence = "You entered " + convertedNumString + ", reversed is " + remainder;
                 }
                 
